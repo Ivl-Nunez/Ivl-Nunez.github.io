@@ -1,1 +1,30 @@
-TESTING
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <style>
+            body {
+                background-color: antiquewhite;
+            }
+        </style>
+
+        My little Nook n Cranny <br/>
+
+        Change the background color (plain JS)
+        <button onclick="changeBackgroundColor('red')">RED</button>
+        <button onclick="changeBackgroundColor('blue')">BLUE</button>
+        <button onclick="changeBackgroundColor('antiquewhite')">ORIGINAL</button>
+
+
+        <script>
+            // select element
+            const body = document.querySelector("body");
+            // change things
+            function changeBackgroundColor(color) {
+                body.style.backgroundColor = color;
+            }
+        </script>
+    </body>
+</html>
